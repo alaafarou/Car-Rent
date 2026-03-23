@@ -1,0 +1,53 @@
+### Login User
+
+POST  http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email":"abyusif5@abyu.com",
+  "password":"abyusif5"
+}
+### sign out
+
+Post  http://localhost:3000/auth/signout
+
+
+### currentUser
+
+Get  http://localhost:3000/auth/currentUser
+
+### Create a new User
+
+POST  http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email":"abyu6@abyu.com",
+  "password":"abyu5"
+}
+
+
+### Find A Particular User with a given ID
+
+GET   http://localhost:3000/auth/3
+
+
+### Find All Users with a given email
+
+GET  http://localhost:3000/auth?email=abyu@abyu.com
+
+
+### Remove User with a given id
+
+DELETE  http://localhost:3000/auth/1
+
+
+### Update a User
+
+PATCH http://localhost:3000/auth/3
+Content-Type: application/json
+
+
+{
+  "email":"abyu@abyu.com"
+  }
